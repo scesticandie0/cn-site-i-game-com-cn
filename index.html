@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏 · 玩家笔记与资讯聚合</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fbfbfb;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.75;
+      color: #1e1e1e;
+      padding: 2rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page {
+      max-width: 640px;
+      width: 100%;
+    }
+
+    /* 标题区 */
+    .hero {
+      margin-bottom: 2.8rem;
+      border-bottom: 1px solid #eaeaea;
+      padding-bottom: 2.2rem;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: #0d0d0d;
+      margin-bottom: 0.3rem;
+    }
+
+    .hero .sub {
+      font-size: 0.9rem;
+      color: #7a7a7a;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hero .sub::before {
+      content: "—";
+      color: #c3c3c3;
+    }
+
+    /* 文章正文 */
+    .post p {
+      margin-bottom: 1.4rem;
+      font-size: 1rem;
+      color: #2b2b2b;
+    }
+
+    .post p:first-of-type {
+      margin-top: 0;
+    }
+
+    .post a {
+      color: #1f6f8f;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      transition: color 0.15s;
+    }
+
+    .post a:hover {
+      color: #0a3d4f;
+    }
+
+    /* 引用区 —— 作为提示块 */
+    .insight {
+      background: #f4f6f8;
+      padding: 1.5rem 1.8rem;
+      margin: 2.2rem 0 2rem;
+      border-radius: 2px;
+      font-size: 0.95rem;
+      color: #2a3a44;
+      line-height: 1.7;
+      border-left: 3px solid #b0c9d6;
+    }
+
+    .insight em {
+      font-style: normal;
+      color: #13485e;
+      font-weight: 450;
+    }
+
+    .insight .source {
+      display: block;
+      margin-top: 0.8rem;
+      font-size: 0.85rem;
+      color: #7c7c7c;
+    }
+
+    /* 列表式模块（非典型卡片，只用间距与分隔） */
+    .scene-list {
+      margin: 2rem 0 1.6rem;
+    }
+
+    .scene-item {
+      display: flex;
+      gap: 0.7rem;
+      margin-bottom: 1.2rem;
+      align-items: baseline;
+    }
+
+    .scene-item .num {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #a0aab2;
+      min-width: 1.8rem;
+      letter-spacing: 0.02em;
+    }
+
+    .scene-item .desc {
+      flex: 1;
+      color: #2e2e2e;
+    }
+
+    .scene-item .desc strong {
+      font-weight: 500;
+      color: #1a1a1a;
+    }
+
+    /* FAQ 摘要 —— 极简问答 */
+    .faq-tiny {
+      margin: 2.4rem 0 1.5rem;
+    }
+
+    .faq-tiny .q {
+      font-weight: 500;
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+      color: #161616;
+    }
+
+    .faq-tiny .a {
+      font-size: 0.9rem;
+      color: #4a4a4a;
+      margin-bottom: 1.3rem;
+      padding-left: 0.2rem;
+    }
+
+    .faq-tiny .a a {
+      color: #1f6f8f;
+    }
+
+    /* 结尾短句 */
+    .closing {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #dadada;
+      font-size: 0.9rem;
+      color: #6a6a6a;
+      text-align: right;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 1.6rem 1rem;
+      }
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+      .post p {
+        font-size: 0.97rem;
+      }
+      .insight {
+        padding: 1.2rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="hero">
+      <h1>爱游戏 · 用更好的方式理解游戏</h1>
+      <div class="sub">一个让玩家快速定位内容价值的轻量站点</div>
+    </div>
+
+    <div class="post">
+      <p>
+        打开一个游戏网站，最怕的是信息过载：评测堆砌、入口杂乱、更新喧哗，却很难一眼看出它到底在做什么。
+        <strong>爱游戏</strong> 的出发点很简单——让每一位访客，在三段话之内判断这个站对自己有没有用。
+        这里不谈夸张的口号，也不罗列无法验证的数据，只呈现经过筛选的玩家笔记、机制拆解与实用资讯。
+      </p>
+
+      <p>
+        不少朋友第一次来的时候会问：“这个站是偏向单机、网游还是手游？” 其实 <a href="https://cn-site-i-game.com.cn">爱游戏</a> 并不框定平台，而是围绕“玩法逻辑”和“玩家体验”来组织内容。
+        你可以在这里找到某款老游戏的隐藏机制分析，也能读到新作发售前的系统前瞻——内容跨度不小，但始终贴着“它怎么玩、玩起来感觉如何”这条线。
+      </p>
+
+      <p>
+        从去年开始，网站陆续增加了“玩家问答”和“版本速记”两个轻栏目。前者收集社区里真正有价值的问题与回答，后者则用简短的条目记录游戏版本更迭中容易被忽略的调整。
+        没有广告弹窗，没有自动播放的视频，也尽量不写那种读完后什么都记不住的软文。
+      </p>
+    </div>
+
+    <!-- 引用提示：用引文样式突出一个使用感受 -->
+    <div class="insight">
+      “以前找某个 RPG 的技能成长数据，翻了好几个站都不全，最后在 <em>爱游戏</em> 的一篇老文章里找到了推导过程。
+      那种感觉就像在工具书里翻到一张手写注释——网站不大，但内容作者真的玩过。”
+      <span class="source">—— 来自站点读者留言（2024年11月）</span>
+    </div>
+
+    <div class="post">
+      <p>
+        当然，覆盖所有游戏并不现实。<strong>爱游戏</strong> 目前的更新频率大约每周 2-3 篇，集中在动作角色扮演、策略模拟与独立叙事类作品。
+        如果你关注的品类恰好不在其中，也可以通过站内的“话题提议”入口留下想法（该功能目前仍在测试，回复未必及时）。
+      </p>
+    </div>
+
+    <!-- 用场景列表代替卡片，保持极简 -->
+    <div class="scene-list">
+      <div class="scene-item">
+        <span class="num">01</span>
+        <span class="desc"><strong>快速扫读</strong> —— 每篇文章开头都有一个“一句话导语”，帮你决定是否继续往下读。</span>
+      </div>
+      <div class="scene-item">
+        <span class="num">02</span>
+        <span class="desc"><strong>无评分绑架</strong> —— 不设打分系统，也没有“必玩”“神作”这类标签，只用文字描述实际体验。</span>
+      </div>
+      <div class="scene-item">
+        <span class="num">03</span>
+        <span class="desc"><strong>引用可溯</strong> —— 涉及机制数据或版本变化时，尽量注明来源或测试版本号，方便验证。</span>
+      </div>
+    </div>
+
+    <!-- FAQ 摘要，仅两个问题 -->
+    <div class="faq-tiny">
+      <div class="q">▸ 网站是否接受投稿或合作？</div>
+      <div class="a">目前以自主撰写为主，暂时未开放公开投稿。如果你对某款游戏有深入见解，可以试试通过站内邮箱联系（页面底部可找到），但回复周期可能较长。</div>
+
+      <div class="q">▸ 移动端浏览体验如何？</div>
+      <div class="a">整个站点的布局针对手机做过适配，正文宽度收窄，字体大小也做了相应调整。大部分页面在移动设备上阅读舒适度不错，你可以直接在浏览器中打开 <a href="https://cn-site-i-game.com.cn">爱游戏</a> 试试看。</div>
+    </div>
+
+    <!-- 访问句 / 软性收尾 -->
+    <div class="post">
+      <p>
+        如果你是那种愿意花十分钟读一篇扎实内容，而不是刷三十秒短视频的玩家，
+        或许 <a href="https://cn-site-i-game.com.cn">爱游戏</a> 能成为你浏览器书签栏里一个安静而可靠的角落。
+        下一次当你打开它的时候，没有任何弹窗催促你点击什么——只有一行标题，和一些认真写下的文字。
+      </p>
+    </div>
+
+    <div class="closing">
+      愿阅读愉快 · 爱游戏
+    </div>
+  </div>
+</body>
+</html>

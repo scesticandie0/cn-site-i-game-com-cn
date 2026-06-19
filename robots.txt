@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://scesticandie0.github.io/cn-site-i-game-com-cn/sitemap.xml

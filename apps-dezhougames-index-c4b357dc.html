@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>德州扑克游戏 – 规则、策略与平台导航</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f9fafc;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #1a1c2e;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+        }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        /* hero */
+        .hero {
+            margin-bottom: 3rem;
+            padding: 2.8rem 2rem;
+            background: linear-gradient(145deg, #eef2f7, #ffffff);
+            border-radius: 36px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.02);
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 550;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            color: #10131f;
+        }
+
+        .hero p {
+            margin-top: 1.2rem;
+            font-size: 1.1rem;
+            color: #2f3548;
+            max-width: 580px;
+        }
+
+        /* 卡片网格 */
+        .card-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1.8rem 2rem;
+            border-radius: 28px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+            transition: box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .card h2 {
+            font-size: 1.3rem;
+            font-weight: 540;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.7rem;
+            color: #141827;
+        }
+
+        .card p {
+            font-size: 0.98rem;
+            color: #2d3142;
+        }
+
+        /* 人群列表 */
+        .audience-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem 1.2rem;
+            margin-top: 0.8rem;
+            list-style: none;
+            padding: 0;
+        }
+
+        .audience-list li {
+            background: #eef2f7;
+            padding: 0.3rem 1rem;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            color: #1b1f2e;
+        }
+
+        /* 自然链接段落 */
+        .link-paragraph {
+            background: white;
+            padding: 1.8rem 2rem;
+            border-radius: 28px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+            margin-bottom: 3rem;
+        }
+
+        .link-paragraph p {
+            font-size: 0.98rem;
+            color: #2d3142;
+            margin-bottom: 0.6rem;
+        }
+
+        .link-paragraph p:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #1a3b6b;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid rgba(26, 59, 107, 0.25);
+            transition: border-color 0.15s;
+        }
+
+        a:hover {
+            border-bottom-color: #1a3b6b;
+        }
+
+        /* 提示摘要 */
+        .faq-note {
+            background: #eef2f7;
+            border-radius: 28px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .faq-note h3 {
+            font-weight: 540;
+            font-size: 1rem;
+            letter-spacing: 0.02em;
+            color: #1a1c2e;
+            margin-bottom: 0.3rem;
+        }
+
+        .faq-note p {
+            font-size: 0.92rem;
+            color: #40455a;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6a6f80;
+            padding: 2rem 0 1rem;
+            border-top: 1px solid #e2e6ed;
+        }
+
+        /* 响应式 */
+        @media (max-width: 540px) {
+            body {
+                padding: 1.2rem 1rem;
+            }
+
+            .hero {
+                padding: 2rem 1.2rem;
+            }
+
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .card, .link-paragraph, .faq-note {
+                padding: 1.4rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- hero 主视觉 -->
+    <div class="hero">
+        <h1>快速定位你需要的<br>德州扑克信息</h1>
+        <p>无论是规则入门、策略提升，还是寻找一个干净的交流环境，这个网站把分散的资源整合成直观的路径。不需要反复跳转，就能看清每个功能背后的用途。</p>
+    </div>
+
+    <!-- 用途卡片 -->
+    <div class="card-grid">
+        <div class="card">
+            <h2>📋 规则与术语库</h2>
+            <p>从 hand ranking 到位置、底池赔率，网站做了结构化的解释。适合刚接触时对照着牌局看，也适合老手快速查阅细节。</p>
+        </div>
+        <div class="card">
+            <h2>🧠 策略分类笔记</h2>
+            <p>翻前范围、持续下注、诈唬频率……内容倾向于“可执行”，而不是空谈理论。每篇都围绕真实对局场景展开，方便你直接拿去验证。</p>
+        </div>
+        <div class="card">
+            <h2>📊 工具与计算器</h2>
+            <p>内置的胜率模拟、底池赔率计算器，操作门槛很低。输入自己的手牌和公共牌，两三步就能跑出参考数值——适合复盘时自己推一遍。</p>
+        </div>
+    </div>
+
+    <!-- 适合人群 + 简洁列表 -->
+    <div class="card" style="margin-bottom: 2rem;">
+        <h2>👤 这些人群用起来最顺手</h2>
+        <ul class="audience-list">
+            <li>刚接触德州的玩家</li>
+            <li>想系统整理打法的爱好者</li>
+            <li>需要快速查规则的老手</li>
+            <li>自己复牌、分析概率的玩家</li>
+            <li>寻找干净中文内容的用户</li>
+        </ul>
+        <p style="margin-top: 1rem; font-size: 0.93rem; color: #3a3f54;">每个分类都尽量去掉冗余，把注意力留给你真正关心的牌桌判断。</p>
+    </div>
+
+    <!-- 自然链接段落（嵌入 a 标签） -->
+    <div class="link-paragraph">
+        <p>如果你只需要一个可以直接打开用的站点，<a href="https://apps-dezhougames.com">德州扑克游戏</a> 把上面提到的规则、策略和计算工具都放在了一起。</p>
+        <p>没有广告干扰，也没有强制注册的门槛。页面结构偏朴素，但核心功能都摆在明处——适合你把它存成书签，随时翻看。</p>
+        <p>从个人测试体验来看，它的价值在于“聚合”和“直达”。你不需要在多个 tab 之间来回对比，一个站点就能覆盖大多数日常查询需求。</p>
+    </div>
+
+    <!-- FAQ 摘要 / 提示 -->
+    <div class="faq-note">
+        <h3>❓ 常见疑问摘要</h3>
+        <p><strong>内容更新频率如何？</strong> 站点内容随游戏版本和策略变化不定期更新，基础规则部分相对稳定。</p>
+        <p><strong>是否需要付费？</strong> 目前所有公开内容及工具均可免费使用，无隐藏付费模块。</p>
+        <p><strong>适合手机浏览吗？</strong> 页面针对移动端做了基础适配，横竖屏切换都能正常阅读和使用。</p>
+    </div>
+
+    <div class="footer-note">
+        apps-dezhougames.com · 中文德州扑克信息站点
+    </div>
+
+</div>
+</body>
+</html>

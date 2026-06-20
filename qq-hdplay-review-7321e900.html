@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NBA直播 · 稳定观赛入口</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fafaf9;
+      color: #1c1c1e;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+    }
+
+    .page {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    /* hero — 一个极短的开场 */
+    .hero {
+      margin-bottom: 2.8rem;
+    }
+
+    .hero .short-line {
+      font-size: 1.1rem;
+      font-weight: 450;
+      color: #6b6b6b;
+      letter-spacing: -0.01em;
+      border-left: 3px solid #d4d4d4;
+      padding-left: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 560;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-top: 0.25rem;
+      color: #111;
+    }
+
+    .hero h1 span {
+      background: #f0ede8;
+      padding: 0.05rem 0.25rem;
+    }
+
+    /* 承接段落 */
+    .intro-text {
+      font-size: 1rem;
+      color: #2d2d2f;
+      margin-bottom: 2.5rem;
+      padding-right: 0.5rem;
+    }
+
+    .intro-text a {
+      color: #1c1c1e;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: #b0b0b0;
+      font-weight: 500;
+      transition: text-decoration-color 0.2s;
+    }
+
+    .intro-text a:hover {
+      text-decoration-color: #1c1c1e;
+    }
+
+    /* 特点列表 — 极简卡片式，窄内聚 */
+    .feature-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-bottom: 3rem;
+    }
+
+    .feature-item {
+      background: #ffffff;
+      border: 1px solid #eae8e6;
+      padding: 1.2rem 1.5rem;
+      border-radius: 0;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+      transition: border-color 0.15s;
+    }
+
+    .feature-item:hover {
+      border-color: #c5c2bc;
+    }
+
+    .feature-item h3 {
+      font-size: 1.05rem;
+      font-weight: 550;
+      margin-bottom: 0.3rem;
+      letter-spacing: -0.01em;
+    }
+
+    .feature-item p {
+      font-size: 0.925rem;
+      color: #3a3a3c;
+      max-width: 90%;
+    }
+
+    .feature-item code {
+      font-family: "SF Mono", "Fira Code", monospace;
+      font-size: 0.85rem;
+      background: #f3f2ef;
+      padding: 0.1rem 0.35rem;
+      color: #2e2e30;
+    }
+
+    /* 温和结尾 —— 一段叙述性的说明 */
+    .closing-note {
+      border-top: 1px solid #e3e1dd;
+      padding-top: 2rem;
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: #3e3e40;
+    }
+
+    .closing-note p {
+      margin-bottom: 1rem;
+    }
+
+    .closing-note a {
+      color: #1c1c1e;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: #b0b0b0;
+      font-weight: 500;
+      transition: text-decoration-color 0.2s;
+    }
+
+    .closing-note a:hover {
+      text-decoration-color: #1c1c1e;
+    }
+
+    .closing-note small {
+      display: block;
+      margin-top: 1.8rem;
+      color: #888580;
+      font-size: 0.8rem;
+      letter-spacing: 0.02em;
+    }
+
+    /* 响应式 */
+    @media (max-width: 520px) {
+      .page {
+        padding: 2rem 1rem 3rem;
+      }
+
+      .hero h1 {
+        font-size: 1.6rem;
+      }
+
+      .feature-item {
+        padding: 1rem 1.2rem;
+      }
+
+      .feature-item p {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- 开场短句 -->
+    <div class="hero">
+      <div class="short-line">稳定的入口，比速度更值得信任。</div>
+      <h1>NBA直播 · <span>直连观赛</span></h1>
+    </div>
+
+    <!-- 承接段落：从稳定入口和页面说明的角度展开 -->
+    <div class="intro-text">
+      对于习惯在深夜或午间打开一场比赛的球迷来说，最怕的不是延迟，而是链接失效、页面跳转、或者层层重定向。 
+      <a href="https://qq-hdplay.com">NBA直播</a> 提供的是一个可直接载入的页面级入口，减少中间环节，把注意力还给比赛本身。没有复杂的菜单结构，也没有多余的插页广告——打开即进入直播选择界面，频道列表按比赛时间排序，清晰标示当前进行中的场次。
+    </div>
+
+    <!-- 特点列表：信息密度稍高，用窄卡片排布 -->
+    <div class="feature-grid">
+      <div class="feature-item">
+        <h3>比赛日程与实时标识</h3>
+        <p>按日期分组展示当日所有场次，已开赛的场次以 <code>● 直播中</code> 标记，结束的比赛显示最终比分。支持快速识别焦点战。</p>
+      </div>
+      <div class="feature-item">
+        <h3>信号源一页式切换</h3>
+        <p>同一场比赛提供多个信号源选项（主客队视角、英文原声、备用线路），无需离开当前页面即可切换，延迟显示在源名称旁。</p>
+      </div>
+      <div class="feature-item">
+        <h3>历史回放与集锦入口</h3>
+        <p>已结束的比赛保留完整回放链接，同时聚合当日十佳球、球星高光片段。所有视频直接调用页面内播放器，不强制跳转第三方平台。</p>
+      </div>
+      <div class="feature-item">
+        <h3>精简交互与低干扰</h3>
+        <p>页面不设置弹窗、漂浮按钮或自动播放的声音。直播窗口尺寸可自由缩放，默认采用深色背景以减少眼部疲劳。</p>
+      </div>
+    </div>
+
+    <!-- 温和结尾，并再次自然嵌入链接 -->
+    <div class="closing-note">
+      <p>如果你已经熟悉大多数直播站的“找链接—试错—再刷新”流程，那么 <a href="https://qq-hdplay.com">NBA直播</a> 的直观之处在于它把频道列表直接摊开在首页，省去了反复点击分类的步骤。适合固定设备（如客厅电脑、外接屏幕的平板）作为常驻书签使用，也适合临时想快速确认当前场次状态的手机端。</p>
+      <p>页面本身不要求注册或登录，也没有隐蔽的付费墙。对于大多数常规比赛日，打开即看。少数焦点战若出现瞬时流量高峰，页面会标注“备用通道”选项以维持可播放状态。</p>
+      <small>页面不对信号源的持续可用性做绝对保证，但多数场次可覆盖至终场。建议搭配稳定的网络环境使用。</small>
+    </div>
+  </div>
+</body>
+</html>
